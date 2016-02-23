@@ -1,0 +1,13 @@
+{%
+set classes = [
+  'block-homepage'
+]
+%}
+<div{{ attributes.addClass(classes) }}>
+  {% block content %}
+    {{ content.field_hero_background_image }}
+    <div class="profile-container">
+      {{ content.field_user_reference }}
+    </div>
+  {% endblock %}
+</div>
