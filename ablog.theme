@@ -1,0 +1,17 @@
+<?php
+
+/**
+ * Implements hook_preprocess().
+ */
+function ablog_preprocess(&$variables, $hook, $info) {
+  // We use this function to explore the TWIG hooks.
+}
+function ablog_preprocess_block(&$variables) {
+  $block_id = $variables['elements']['#id'];
+  $content = $variables['content'];
+  if($block_id == 'homepageblock') {
+    $block_content = $content['#block_content'];
+    $image_url = $block_content->get('field_hero_background_image')->entity->url();
+    $variables['image_url'] = $image_url;
+  }
+}

@@ -1,12 +1,14 @@
-{%
-set classes = [
-  'block-homepage'
-]
-%}
-<div{{ attributes.addClass(classes) }}>
+{% if image_url %}
+  <style>
+    .block_homepage {
+      background: url({{ image_url }});
+      background-size: cover;
+    }
+  </style>
+{% endif %}
+<div class="block_homepage">
   {% block content %}
-    {{ content.field_hero_background_image }}
-    <div class="profile-container">
+    <div class="block_homepage-container">
       {{ content.field_user_reference }}
     </div>
   {% endblock %}
