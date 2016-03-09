@@ -2,10 +2,11 @@
 @import "../bower_components/open-sans-fontface/open-sans.scss";
 @import "../bower_components/montserrat-webfont/scss/montserrat-webfont";
 // Bootstrap grid.
-@import "../bower_components/bootstrap/scss/bootstrap-reboot";
+@import "../bower_components/bootstrap/scss/normalize";
 @import "../bower_components/bootstrap/scss/bootstrap-grid";
 
-
+// My theme styles.
+@import "html";
 
 
 

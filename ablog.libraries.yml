@@ -1,0 +1,12 @@
+base:
+  version: 1.0
+  header: true
+  css:
+    theme:
+        css/styles.css: {}
+  js:
+    js/custom.js: { scope: Footer }
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+    - core/drupal
