@@ -1,0 +1,26 @@
+{
+  "name": "ablog",
+  "version": "1.0.0",
+  "description": "Node package manager for ablog",
+  "main": "gulp.js",
+  "dependencies": {
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.2.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/isramv/ablog.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/isramv/ablog/issues"
+  },
+  "homepage": "https://github.com/isramv/ablog#readme"
+}
