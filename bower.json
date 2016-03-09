@@ -25,6 +25,7 @@
     "montserrat-webfont": "^1.0.3"
   },
   "devDependencies": {
-    "Materialize": "materialize#^0.97.5"
+    "Materialize": "materialize#^0.97.5",
+    "bootstrap": "^3.3.6"
   }
 }
