@@ -23,5 +23,8 @@
   ],
   "dependencies": {
     "montserrat-webfont": "^1.0.3"
+  },
+  "devDependencies": {
+    "Materialize": "materialize#^0.97.5"
   }
 }
