@@ -1,0 +1,27 @@
+{
+  "name": "ablog",
+  "homepage": "https://github.com/isramv/ablog",
+  "authors": [
+    "Israel Morales <israel.morales@rocket.com.mx>"
+  ],
+  "description": "theme for Drupal 8",
+  "main": "",
+  "moduleType": [
+    "node"
+  ],
+  "keywords": [
+    "drupal",
+    "8"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "montserrat-webfont": "^1.0.3"
+  }
+}

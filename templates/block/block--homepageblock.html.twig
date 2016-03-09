@@ -6,10 +6,11 @@
     }
   </style>
 {% endif %}
-<div class="block_homepage">
+{% set special_class = 'block_homepage' %}
+<div{{ attributes.addClass(special_class) }}>
+  {# title_suffix this contains classes for the contextual links. #}
+  {{ title_suffix }}
   {% block content %}
-    <div class="block_homepage-container">
-      {{ content.field_user_reference }}
-    </div>
+    {{ content|without('field_hero_background_image') }}
   {% endblock %}
 </div>
