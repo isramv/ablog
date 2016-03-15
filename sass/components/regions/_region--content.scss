@@ -1,0 +1,8 @@
+.region-content {
+  @include media-breakpoint-up(lg) {
+    margin-top: 80px;
+  }
+  @include media-breakpoint-down(lg) {
+    margin-top: 40px;
+  }
+}

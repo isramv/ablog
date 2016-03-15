@@ -73,15 +73,15 @@ view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
   {# this title_prefix prints the contextual links. #}
   {{ title_suffix }}
   <div class="row">
-    <div class="col-xs-12 col-md-12 col-lg-2">
+    <div class="col-xs-8 col-md-11 col-lg-2">
       {% if display_submitted %}
           <div{{ author_attributes.addClass('node__submitted') }}>
-            {% trans %}Submitted by {{ author_name }} on {{ date }}{% endtrans %}
+            {% trans %}Posted on {{ date }} by {{ author_name }}{% endtrans %}
             {{ metadata }}
           </div>
       {% endif %}
     </div>
-    <div class="col-xs-12 col-md-12 col-lg-8 col-lg-offset-1">
+    <div class="col-xs-10 col-md-11 col-lg-8 col-lg-offset-1">
       {% if not page %}
         <h2{{ title_attributes }}>
           <a href="{{ url }}" rel="bookmark">{{ label }}</a>

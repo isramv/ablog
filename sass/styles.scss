@@ -8,11 +8,14 @@
 // My theme styles.
 @import "html";
 
+// Regions.
+@import "components/regions/region--content";
+
 // Nodes.
-@import "components/node--article--teaser";
+@import "components/node/node--article--teaser";
 
 // Blocks.
-@import "blocks/block--homepageblock";
+@import "components/blocks/block--homepageblock";
 
 
 
