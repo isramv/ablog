@@ -917,6 +917,21 @@ h1, h2, h3, h4, h5 {
 a {
   text-decoration: none; }
 
+@media (min-width: 768px) {
+  .node--type-article.node--view-mode-teaser .row {
+    margin-bottom: 140px; } }
+
+@media (max-width: 991px) {
+  .node--type-article.node--view-mode-teaser .row {
+    margin-bottom: 70px; } }
+
+.node--type-article.node--view-mode-teaser h2 {
+  margin: 0; }
+  .node--type-article.node--view-mode-teaser h2 a {
+    font-family: 'Montserrat';
+    font-size: 48px;
+    color: #000; }
+
 .block_homepage {
   padding-bottom: 40px; }
   .block_homepage .field--name-field-links .field__item {
