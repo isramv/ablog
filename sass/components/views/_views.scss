@@ -1,3 +1,9 @@
 .view-frontpage {
   margin-top: 127px;
+  .views-row {
+    &:last-child {
+      border-bottom: 1px solid #7B7B7B;
+      margin-bottom: 80px;
+    }
+  }
 }

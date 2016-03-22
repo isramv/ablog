@@ -1,0 +1,24 @@
+.pager {
+  margin-bottom: 80px;
+  ul.pager__items {
+    li {
+      text-align: center;
+      &.is-active {
+        background: #7B7B7B;
+        -webkit-border-radius: 10%;
+        -moz-border-radius: 10%;
+        border-radius: 10%;
+        a {
+          color: #ffffff;
+        }
+      }
+      a {
+        font-family: 'Open Sans';
+        color: #B4B4B4;
+        &:hover {
+          color: #7B7B7B;
+        }
+      }
+    }
+  }
+}

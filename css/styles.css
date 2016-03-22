@@ -3023,3 +3023,23 @@ html.hide {
 
 .view-frontpage {
   margin-top: 127px; }
+  .view-frontpage .views-row:last-child {
+    border-bottom: 1px solid #7B7B7B;
+    margin-bottom: 80px; }
+
+.pager {
+  margin-bottom: 80px; }
+  .pager ul.pager__items li {
+    text-align: center; }
+    .pager ul.pager__items li.is-active {
+      background: #7B7B7B;
+      -webkit-border-radius: 10%;
+      -moz-border-radius: 10%;
+      border-radius: 10%; }
+      .pager ul.pager__items li.is-active a {
+        color: #ffffff; }
+    .pager ul.pager__items li a {
+      font-family: 'Open Sans';
+      color: #B4B4B4; }
+      .pager ul.pager__items li a:hover {
+        color: #7B7B7B; }
