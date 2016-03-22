@@ -1,6 +1,16 @@
+// this is how we override a bootstrap variable.
+$grid-breakpoints: (
+        xs: 0,
+        sm: 544px,
+        md: 768px,
+        lg: 992px,
+        //xl: 1200px
+);
+
 // Fonts.
 @import "../bower_components/open-sans-fontface/open-sans.scss";
 @import "../bower_components/montserrat-webfont/scss/montserrat-webfont";
+@import "../bower_components/font-awesome/scss/font-awesome";
 // Bootstrap grid.
 @import "../bower_components/bootstrap/scss/normalize";
 @import "../bower_components/bootstrap/scss/bootstrap-grid";
@@ -16,6 +26,11 @@
 
 // Blocks.
 @import "components/blocks/block--homepageblock";
+@import "components/blocks/block--ablog-main-menu";
+@import "components/blocks/block--socialiconsblock";
+
+// Views.
+@import "components/views/views";
 
 
 

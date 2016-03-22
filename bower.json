@@ -22,10 +22,11 @@
     "tests"
   ],
   "dependencies": {
-    "montserrat-webfont": "^1.0.3"
+    "montserrat-webfont": "^1.0.3",
+    "font-awesome": "^4.5.0"
   },
   "devDependencies": {
     "Materialize": "materialize#^0.97.5",
-    "bootstrap": "^3.3.6"
+    "bootstrap": "^4"
   }
 }

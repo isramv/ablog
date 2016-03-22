@@ -1,8 +1,11 @@
 .region-content {
   @include media-breakpoint-up(lg) {
-    margin-top: 80px;
+    margin-top: 40px;
   }
   @include media-breakpoint-down(lg) {
     margin-top: 40px;
   }
+}
+h1.page-title {
+  margin: 0;
 }

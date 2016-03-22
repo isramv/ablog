@@ -1,0 +1,23 @@
+#block-socialiconsblock {
+ .field--name-field-social-link {
+   text-align: center;
+   .field__item {
+     display: inline-block;
+   }
+   i {
+
+     color: #bcbcbc;
+     font-size: 38px;
+     margin: 0 17.5px;
+     -webkit-transition: all 500ms;
+     -moz-transition: all 500ms;
+     -ms-transition: all 500ms;
+     -o-transition: all 500ms;
+     transition: all 500ms;
+     &:hover {
+       color: #7B7B7B;
+       position: relative;
+     }
+   }
+ }
+}
