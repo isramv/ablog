@@ -15,3 +15,11 @@ function ablog_preprocess_block(&$variables) {
     $variables['image_url'] = $image_url;
   }
 }
+function ablog_preprocess_node(&$variables) {
+  if($variables['view_mode'] == 'header_title') {
+    if($variables['node']->hasField('field_image')) {
+      $variables['image_url'] = $variables['node']->get('field_image')->entity->url();
+    }
+    $variables['node_title'] = $variables['node']->get('title')->getValue()[0]['value'];
+  }
+}

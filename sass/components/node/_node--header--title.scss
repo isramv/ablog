@@ -1,0 +1,24 @@
+.block_post {
+  .container {
+    @include media-breakpoint-up(m) {
+      height: 600px;
+    }
+  }
+
+  .post-title {
+    font-family: 'Montserrat';
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 58px;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 0px 2px 4px #000000;
+    padding: 43px 0;
+  }
+  .icons-container {
+    i {
+      color: #fff;
+      text-shadow: 0px 2px 4px #000000;
+    }
+  }
+}

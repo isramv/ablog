@@ -1,0 +1,31 @@
+{% if content.field_image[0]['image_styled_uri'] is not null %}
+  {% set image_url = content.field_image[0]['image_styled_uri'] %}
+{% endif %}
+
+{% if image_url %}
+  <style>
+    .block_post {
+      background: url({{ image_url }});
+      background-size: cover;
+      overflow: auto;
+    }
+  </style>
+{% endif %}
+{% set special_class = 'block_post' %}
+<div{{ attributes.addClass(special_class) }}>
+  {{ title_suffix }}
+  <div class="container">
+    <div class="icons-container">
+      <a class="back-icon"><i class="fa fa-2x fa-chevron-left"></i></a>
+      <a class="burger"><i class="fa fa-2x fa-bars"></i></a>
+    </div>
+    <h1 class="post-title">{{ node_title }}</h1>
+  </div>
+</div>
+<script>
+  $ = jQuery;
+  $(".back-icon").click(function() {
+    event.preventDefault();
+    history.back(1);
+  });
+</script>

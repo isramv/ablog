@@ -11,7 +11,9 @@
   {# title_suffix this contains classes for the contextual links. #}
   {{ title_suffix }}
   {% block content %}
-    <a class="burger"><i class="fa fa-bars"></i></a>
-    {{ content|without('field_hero_background_image') }}
+    <div class="container">
+      <a class="burger"><i class="fa fa-bars"></i></a>
+      {{ content|without('field_hero_background_image') }}
+    </div>
   {% endblock %}
 </div>
