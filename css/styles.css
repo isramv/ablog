@@ -2969,7 +2969,10 @@ h1.page-title {
     margin-right: 15px;
     cursor: pointer; }
     .block_homepage .burger i {
-      font-size: 28px; }
+      font-size: 28px;
+      cursor: pointer; }
+      .block_homepage .burger i:before {
+        text-shadow: 0px 2px 4px #000000; }
 
 .navigation {
   position: absolute;
@@ -3022,9 +3025,17 @@ html.hide {
       position: relative; }
 
 .block_post .container {
-  height: 600px; }
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  min-height: 500px; }
+  @media (max-width: 543px) {
+    .block_post .container {
+      min-height: 400px; } }
 
 .block_post .post-title {
+  height: 80%;
+  width: 100%;
   font-family: 'Montserrat';
   font-size: 48px;
   font-weight: bold;
@@ -3034,9 +3045,29 @@ html.hide {
   text-shadow: 0px 2px 4px #000000;
   padding: 43px 0; }
 
-.block_post .icons-container i {
-  color: #fff;
-  text-shadow: 0px 2px 4px #000000; }
+.block_post .icons-container {
+  margin: 20px auto;
+  position: relative; }
+  @media (min-width: 992px) {
+    .block_post .icons-container {
+      min-width: 940px; } }
+  @media (min-width: 768px) {
+    .block_post .icons-container {
+      max-width: 720px; } }
+  @media (max-width: 991px) {
+    .block_post .icons-container {
+      width: 70%; } }
+  @media (max-width: 543px) {
+    .block_post .icons-container {
+      width: 90%; } }
+  .block_post .icons-container i {
+    color: #fff;
+    text-shadow: 0px 2px 4px #000000;
+    font-size: 28px;
+    cursor: pointer; }
+  .block_post .icons-container .burger {
+    position: absolute;
+    right: 0px; }
 
 .view-frontpage {
   margin-top: 127px; }

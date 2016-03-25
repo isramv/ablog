@@ -1,11 +1,19 @@
 .block_post {
   .container {
-    @include media-breakpoint-up(m) {
-      height: 600px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    @include media-breakpoint-up(xs) {
+      min-height: 500px;
+    }
+    @include media-breakpoint-down(xs) {
+      min-height: 400px;
     }
   }
 
   .post-title {
+    height: 80%;
+    width: 100%;
     font-family: 'Montserrat';
     font-size: 48px;
     font-weight: bold;
@@ -16,9 +24,29 @@
     padding: 43px 0;
   }
   .icons-container {
+    margin: 20px auto;
+    position: relative;
+    @include media-breakpoint-up(lg) {
+      min-width: 940px;
+    }
+    @include media-breakpoint-up(md) {
+      max-width: 720px;
+    }
+    @include media-breakpoint-down(md) {
+      width: 70%;
+    }
+    @include media-breakpoint-down(xs) {
+      width: 90%;
+    }
     i {
       color: #fff;
       text-shadow: 0px 2px 4px #000000;
+      font-size: 28px;
+      cursor: pointer;
+    }
+    .burger {
+      position: absolute;
+      right: 0px;
     }
   }
 }
