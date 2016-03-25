@@ -79,7 +79,8 @@ view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
     {% if display_submitted %}
       <div class="author-left col-sm-12 col-md-2 col-lg-2">
         {{ author_picture }}
-        {% trans %}By {{ author_name }} on {{ date }}{% endtrans %}
+        {% set node_created = node.get('created')[0].getValue()['value'] %}
+        {% trans %}By {{ author_name }} on {% endtrans %} {{ node_created|date("M d Y") }}
         {{ metadata }}
       </div>
     {% endif %}

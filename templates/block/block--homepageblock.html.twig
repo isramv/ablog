@@ -7,7 +7,7 @@
   </style>
 {% endif %}
 {% set special_class = 'block_homepage' %}
-<div{{ attributes.addClass(special_class) }}>
+<div{{ attributes.addClass(special_class) }} data-uk-parallax="{bg: '-100'}">
   {# title_suffix this contains classes for the contextual links. #}
   {{ title_suffix }}
   {% block content %}

@@ -10,7 +10,6 @@
       min-height: 400px;
     }
   }
-
   .post-title {
     height: 80%;
     width: 100%;
@@ -21,7 +20,7 @@
     text-align: center;
     color: #ffffff;
     text-shadow: 0px 2px 4px #000000;
-    padding: 43px 0;
+    padding: 0 0 43px 0;
   }
   .icons-container {
     margin: 20px auto;
@@ -33,7 +32,7 @@
       max-width: 720px;
     }
     @include media-breakpoint-down(md) {
-      width: 70%;
+      width: 90%;
     }
     @include media-breakpoint-down(xs) {
       width: 90%;

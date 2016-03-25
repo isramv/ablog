@@ -76,7 +76,8 @@ view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
     <div class="col-xs-8 col-md-11 col-lg-2">
       {% if display_submitted %}
           <div{{ author_attributes.addClass('node__submitted') }}>
-            {% trans %}Posted on {{ date }} by {{ author_name }}{% endtrans %}
+            {% set node_created = node.get('created')[0].getValue()['value'] %}
+            {% trans %}By {{ author_name }} on {% endtrans %} {{ node_created|date("M d Y") }}
             {{ metadata }}
           </div>
       {% endif %}

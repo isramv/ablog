@@ -8,6 +8,7 @@ version: 1.0
 # Defining the libraries.
 libraries:
   - ablog/base
+  - ablog/parallax
 
 # Defining the regions.
 regions:

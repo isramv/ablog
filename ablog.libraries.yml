@@ -10,3 +10,10 @@ base:
     - core/jquery
     - core/jquery.once
     - core/drupal
+
+parallax:
+  version: VERSION
+  header: false
+  js:
+    js/vendor/getuikit/core.js: { scope: Footer }
+    js/vendor/getuikit/parallax.js: { scope: Footer }

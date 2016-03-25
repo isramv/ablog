@@ -1,9 +1,9 @@
 .node--type-article {
   &.node--view-mode-teaser {
     .node__submitted {
-      font-size: 20px;
+      font-size: 18px;
       font-family: 'Open Sans';
-      font-weight: bold;
+      font-weight: 300;
       color: #B6B6B6;
       margin-top: 5px;
       a {
@@ -12,22 +12,33 @@
     }
     .row {
       @include media-breakpoint-up(md) {
-        margin-bottom: 140px;
+        margin-bottom: 100px;
       }
       @include media-breakpoint-down(md) {
         margin-bottom: 70px;
+        display: flex;
+        flex-flow: column;
+        >div {
+          &:first-child {
+            order: 2;
+          }
+          &:last-child {
+            order: 1;
+          }
+        }
       }
     }
     h2 {
       margin: 0;
       a {
         font-family: 'Montserrat';
-        font-size: 40px;
-        color: #000;
+        font-size: 34px;
+        color: #444;
       }
     }
     p {
-      font-size: 20px;
+      font-size: 18px;
+      line-height: 30px;
       color: #333;
     }
   }

@@ -1,0 +1,26 @@
+.node--type-article {
+
+  &.node--view-mode-full {
+    .field--name-body {
+      p {
+        font-family: 'Open Sans';
+        font-size: 16px;
+        line-height: 30px;
+        color: #333;
+        margin: 40px 0;
+        &:first-child {
+          margin-top: 0;
+        }
+      }
+    }
+    .field--name-user-picture {
+      img {
+        border-radius: 50%;
+      }
+    }
+    .field--name-field-photo-credits {
+      margin-bottom: 40px;
+      color: #999;
+    }
+  }
+}
