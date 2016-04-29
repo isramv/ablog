@@ -5,7 +5,9 @@ base:
     theme:
         css/styles.css: {}
   js:
-    js/custom.js: { scope: Footer }
+    js/vendor/getuikit/core.js: { scope: Footer }
+    js/vendor/getuikit/offcanvas.js: { scope: Footer }
+#    js/custom.js: { scope: Footer }
   dependencies:
     - core/jquery
     - core/jquery.once
@@ -15,6 +17,4 @@ parallax:
   version: VERSION
   header: false
   js:
-    js/vendor/getuikit/core.js: { scope: Footer }
     js/vendor/getuikit/parallax.js: { scope: Footer }
-    js/vendor/getuikit/offcanvas.js: { scope: Footer }

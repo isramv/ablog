@@ -2940,6 +2940,9 @@ h1.page-title {
     .block_homepage {
       padding-bottom: 100px;
       min-height: 500px; } }
+  @media (max-width: 543px) {
+    .block_homepage {
+      height: 100vh; } }
   .block_homepage .field--name-field-links .field__item {
     text-align: right; }
     .block_homepage .field--name-field-links .field__item a {

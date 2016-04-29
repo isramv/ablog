@@ -40,7 +40,7 @@ set classes = [
 ]
 %}
 {% set heading_id = attributes.id ~ '-menu'|clean_id %}
-<div id="my-id" class="uk-offcanvas">
+<div id="sidenav" class="uk-offcanvas">
   <div class="uk-offcanvas-bar">
     <nav role="navigation" aria-labelledby="{{ heading_id }}"{{ attributes.addClass(classes)|without('role', 'aria-labelledby') }}>
       {# Label. If not displayed, we still provide it for screen readers. #}
