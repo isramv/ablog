@@ -17,3 +17,4 @@ parallax:
   js:
     js/vendor/getuikit/core.js: { scope: Footer }
     js/vendor/getuikit/parallax.js: { scope: Footer }
+    js/vendor/getuikit/offcanvas.js: { scope: Footer }

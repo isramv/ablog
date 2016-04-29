@@ -76,6 +76,8 @@ view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
 <article{{ attributes.addClass(classes) }}>
   {{ title_suffix }}
   <div class="row">
+    {{ dump(_context) }}
+    {#{{ kint(_context) }}#}
     {% if display_submitted %}
       <div class="author-left col-sm-12 col-md-2 col-lg-2">
         {{ author_picture }}
